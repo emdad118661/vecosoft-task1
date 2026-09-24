@@ -1,0 +1,22 @@
+Project: Professional Order Tracking System (Next.js & Tailwind CSS)
+
+Prompt 1 (Initial Setup & Mock Data):
+"I'm building an order tracking screen in Next.js. I need a flexible mock data structure in JavaScript that includes order ID, status, a timeline of steps (Processing, Shipped, etc.), and estimated delivery. How should I structure this object to handle different order states like 'Delayed' or 'Delivered'?"
+
+Prompt 2 (UI Styling - Tailwind CSS):
+"I want to create a vertical timeline using Tailwind CSS. How can I implement a dynamic line between status dots so that the line turns blue when a step is completed and stays gray when pending? Please provide the Tailwind classes for the vertical connector."
+
+Prompt 3 (Date Logic - Business Requirement):
+"I have a requirement where if the 'Out for Delivery' date is more than 3 days after the 'Order Placed' date, the system should flag it as 'Delayed'. Can you help me with a JavaScript function using Date objects to calculate this difference in days?"
+
+Prompt 4 (Admin-User Synchronization):
+"I'm using React useState to manage order data. I want to build a simple way to toggle between an Admin view and a Customer view on the same page for testing. How can I structure my main component so that Admin inputs (checkboxes and date pickers) instantly update the UI of the Customer's mobile tracking screen?"
+
+Prompt 5 (Debugging/State Management):
+"My logout function in Next.js is not properly clearing the user state and resetting the 'Preparing' animation timer. Here is my logout handler: handleLogout = () => { setUser(null); }. What else should I include to ensure the app returns to a clean login state?"
+
+Prompt 6 (Feature Enhancement - Feedback Logic):
+"I want to add a validation where if a customer marks an order as 'Not Received', they must provide a phone number before submitting. If the field is empty, show an alert. Also, how can I conditionally update the main status header text to 'Delivered, but not received' based on this feedback?"
+
+Prompt 7 (Documentation - README):
+"I have completed the project with features like Role-based login (Admin/User), 5-second initial loading simulation, and automated delay detection. Based on these features, please write a professional README.md file in Markdown format for my GitHub repository."
