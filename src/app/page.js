@@ -60,7 +60,7 @@ export default function OrderTrackingSystem() {
     setUser(null); setEmail(''); setPassword(''); setIsPreparing(true);
   };
 
-  // ফিডব্যাক সাবমিট ফাংশন (ফোন নম্বর ভ্যালিডেশন সহ)
+  // Feedback submission function (with phone number validation)
   const submitFeedback = (status) => {
     if (status === 'not_received') {
       if (!tempPhone || tempPhone.trim() === "") {
@@ -149,7 +149,7 @@ export default function OrderTrackingSystem() {
             ) : (
               <div className="p-8 flex-1 overflow-y-auto custom-scrollbar">
                 <div className="mb-10 text-center sm:text-left">
-                  {/* মূল স্ট্যাটাস হেডার - আপনার রিকোয়েস্ট অনুযায়ী আপডেট করা হয়েছে */}
+                  {/* Main Status Header – Updated according to your request. */}
                   <h2 className={`text-5xl font-black leading-none tracking-tighter italic ${isDelayed ? 'text-orange-600' : 'text-slate-900'}`}>
                     {orderInfo.feedback.status === 'not_received' ? 'Delivered, but not received' : 
                      orderInfo.steps.delivered.completed ? 'Delivered' : 
