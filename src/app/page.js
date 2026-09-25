@@ -10,10 +10,10 @@ export default function OrderTrackingSystem() {
 
   const [orderInfo, setOrderInfo] = useState({
     id: "ORD-992831",
-    orderDate: "2023-10-20", 
+    orderDate: "2026-09-23", 
     steps: {
-      processing: { completed: true, date: "2023-10-21" },
-      shipped: { completed: true, date: "2023-10-22" },
+      processing: { completed: true, date: "2026-09-24" },
+      shipped: { completed: true, date: "2026-09-25" },
       outForDelivery: { completed: false, date: "" },
       delivered: { completed: false, date: "" }
     },
@@ -24,7 +24,7 @@ export default function OrderTrackingSystem() {
   const [tempPhone, setTempPhone] = useState('');
 
 
-  
+
   useEffect(() => {
     if (user && user.role === 'customer') {
       setIsPreparing(true);
